@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cyberpunk DnD Campaign</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Michroma&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/index.css">
+        <script src="./js/index.js" defer></script>
+    </head>
+    <body class="container">
+        <header class="site-header">Cyberpunk DnD Campaign Companion Site</header>
+        <main>
+            <div class="intro-container">
+                <h1 class="Intro">Wake Up Samurai!</h1>
+                <h1  class="Intro">We Got a Campaign to Run</h1>
+            </div>
+            <div class="empathy-calc-layout">
+                <h2>Empathy/Chrome Calculator</h2>
+                <p>Input your current Wisdom and Constituiton modifiers in the boxes below.</p>
+                <form class="empathy-calc">
+                    <div class="form-field">
+                        <label for="wisdom">Wisdom Modifier:</label>
+                        <input type="number" id="wisdom">
+                    </div>
+                    <div class="form-field">
+                        <label for="constitution">Constituiton Modifier:</label>
+                        <input type="number" id="constituiton">
+                    </div>
+                    <div class="result">
+                        <p id="empathyResult"></p>
+                    </div>
+                </form>
+                <button type="button" id="calcEmpathyButton">Calculate</button>
+            </div>
+        </main>
+        <footer class="site-footer">
+            <p>Made for myself and my awesome friends!</p>
+            <p>Site created by Shaheer Ahmed Afridi</p>
+        </footer>
+    </body>
+</html>
