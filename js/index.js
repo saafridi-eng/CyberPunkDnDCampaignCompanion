@@ -13,16 +13,15 @@ const getConMod = function(){
 } // returns an int of players inputed conmod
 
 const calcEmpathy = function(wisMod, conMod){
-    const empathyResult = 3 + Math.floor((wisMod + conMod)/2);
+    const empathyResult = 3 + Math.floor((wisMod + conMod));
     return empathyResult;
 } //caclulates and returns the empathy points
 
 const calcEmpathyButton = document.querySelector('#calcEmpathyButton')
 calcEmpathyButton.addEventListener('click', () => {
     let result = calcEmpathy(getWisMod(), getConMod());
-    if (result < 0) {result = 0};
+    if (result <= 0) {result = 1};
 
     const resultDisplay = document.querySelector('#empathyResult');
     resultDisplay.textContent = 'Your Total Empathy Points: ' + result;
-});
-
+});    
