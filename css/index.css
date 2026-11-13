@@ -24,7 +24,7 @@ main {
 
 body {
     display: flex;
-    padding-left: 1rem;
+    padding-left: 0rem;
     flex-direction: column;
     font-family: 'Michroma', sans-serif;
     background-color: rgb(255, 225, 52);
@@ -35,7 +35,8 @@ body {
 .site-header {
     display: flex;
     padding: 2rem;
-    margin: -1rem;
+    margin: 0;
+    margin-left: -1;
     font-family: 'Cyberpunk', sans-serif;
     font-size: 2rem;
     color: rgb(255, 225, 52);
@@ -52,6 +53,13 @@ body {
 }
 
 .Intro {font-family: 'Cyberpunk', sans-serif}
+
+.empathy-calc-layout {
+    display: flex;
+    flex-direction: column;
+    align-items:baseline;
+    margin-left: 2rem;
+}
 
 .site-footer {
     display: flex;
